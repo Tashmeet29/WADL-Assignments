@@ -1,0 +1,136 @@
+/* styles.css */
+
+body {
+    font-family: 'San Francisco', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#new {
+    background-image: url('images/new1.jpg');
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.hero {
+    background-image: url('images/coffee-hero.jpg');
+    text-align: right;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    padding-right: 50px;
+    color: #0A4F51;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    padding-right: 50px;
+    color: #0A4F51;
+}
+
+.hero a {
+    padding-right: 50px;
+    text-decoration: none;
+    color: cadetblue;
+    font-size: large;
+}
+
+.about {
+    margin-top: 50px;
+}
+
+.menu {
+    text-align: center;
+    padding: 50px 0; /* Added padding to create space */
+}
+
+.menu h2 {
+    color: #0A4F51; /* Adjusted color */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.menu p {
+    color: #0A4F51; /* Adjusted color */
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.menu ul li h3 {
+    color: #4CAF50;
+}
+
+.menu ul li p {
+    margin-bottom: 10px;
+}
+
+.contact {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact address {
+    font-style: normal;
+}
