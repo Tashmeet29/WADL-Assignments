@@ -1,0 +1,98 @@
+/* registration.component.css */
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  background: rgba(0, 31, 63, 0); /* Fallback color if gradients are not supported */
+}
+
+.form-container {
+  width: 700px; /* Adjust the width as needed */
+  height: 1100px; /* Adjust the height as needed */
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+  background: #c8dfee; /* Use linear-gradient for the background */
+}
+
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+}
+
+.input-group label {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 10px;
+  width: 150px; /* Adjust the width as needed */
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+  width: 100%; /* Take up the remaining width */
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: 8px; /* Add rounded corners */
+  border: 1px solid #ccc; /* Add border for a cleaner look */
+}
+
+/* Display male and female radio buttons inline */
+.radio-group {
+  display: flex;
+  gap: 10px; /* Adjust the gap as needed */
+}
+
+/* Display sweet and spicy checkboxes inline */
+.checkbox-group {
+  display: flex;
+  gap: 10px; /* Adjust the gap as needed */
+}
+
+/* Style for the dropdown */
+.input-group select {
+  appearance: none;
+  background: #fff url('data:image/svg+xml;utf8,<svg fill="%234CAF50" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>') no-repeat right 10px center;
+  background-size: 20px;
+  padding-right: 40px; /* Adjust the padding as needed */
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button-group button {
+  padding: 12px 24px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.button-group button:hover {
+  background-color: #45a049;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+p {
+  text-align: center;
+  font-size: 23px;
+  margin-top: 20px;
+  font-weight: bold;
+}
