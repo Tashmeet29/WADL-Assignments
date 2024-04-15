@@ -1,0 +1,42 @@
+.menu-section {
+    padding: 20px;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.add-to-order {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Add this line to provide some space below the add-to-order div */
+}
+
+.add-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.quantity-input {
+    width: 40px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Additional styles for buttons and container */
+.buttons-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.btn-primary,
+.btn-success {
+    margin-top: 0; /* Set margin-top to 0 for both buttons */
+}

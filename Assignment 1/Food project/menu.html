@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu-style.css">
+</head>
+<body>
+    <div class="menu-section">
+        <h2 id="a5">Our Menu</h2>
+        <div class="buttons-container">
+            <a class="btn btn-primary" href="doc.html">Back</a>
+            <a class="btn btn-success" href="order.html">Go to Order</a>
+        </div>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Dish</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sarson da Saag -->
+                <tr>
+                    <td><img id="a7" src="images/sarson-da-saag.jpg" alt="Dish 1"></td>
+                    <td>
+                        <h3>Sarson da Saag</h3>
+                        <p id="a8">A traditional Punjabi dish featuring mustard greens and spices, simmered to flavorful goodness.</p>
+                    </td>
+                    <td>&#8377;140</td>
+                    <td>
+                        <div class="add-to-order">
+                            <input type="number" min="0" value="0" class="form-control quantity-input" id="quantity_sarson_da_saag">
+                            <button class="btn btn-success add-btn" onclick="addToOrder('Sarson da Saag', 140, 'quantity_sarson_da_saag')"><i class="bi bi-plus">Add</i></button>
+                        </div>
+                    </td>                    
+                </tr>
+                </tr>
+                <tr>
+                    <td><img id="a7" src="images/aloo paratha.jpg" alt="Dish 2"></td>
+                    <td>
+                        <h3>Aloo Paratha</h3>
+                        <p id="a8">Fluffy whole wheat flatbread stuffed with spiced mashed potatoes, pan-fried to golden perfection.</p>
+                    </td>
+                    <td>&#8377;50/pc</td>
+                    <td>
+                        <div class="add-to-order">
+                            <input type="number" min="0" value="0" class="form-control quantity-input" id="quantity_aloo_paratha">
+                            <button class="btn btn-success add-btn" onclick="addToOrder('Aloo Paratha', 50, 'quantity_aloo_paratha')"><i class="bi bi-plus">Add</i></button>
+                        </div>
+                    </td>   
+                </tr>
+                <tr>
+                    <td><img id="a7" src="images/tandoori_paneer_tikka.jpg" alt="Dish 2"></td>
+                    <td>
+                        <h3>Tandoori Paneer Tikka</h3>
+                        <p id="a8">Marinated cubes of paneer grilled to perfection in a traditional clay oven, offering a smoky and spiced flavor.</p>
+                    </td>
+                    <td>&#8377;250</td>
+                    <td>
+                        <div class="add-to-order">
+                            <input type="number" min="0" value="0" class="form-control quantity-input" id="quantity_tandoori_paneer_tikka">
+                            <button class="btn btn-success add-btn" onclick="addToOrder('Aloo Paratha', 250, 'quantity_tandoori_paneer_tikka')"><i class="bi bi-plus">Add</i></button>
+                        </div>
+                    </td> 
+                </tr>
+                <tr>
+                    <td><img id="a7" src="images/masala-dosa.jpg" alt="Dish 2"></td>
+                    <td>
+                        <h3>Masala Dosa</h3>
+                        <p id="a8">Thin rice crepe filled with a spiced mixture of potatoes, served with coconut chutney and tangy sambar.</p>
+                    </td>
+                    <td>&#8377;90</td>
+                    <td>
+                        <div class="add-to-order">
+                            <input type="number" min="0" value="0" class="form-control quantity-input" id="quantity_masala_dosa">
+                            <button class="btn btn-success add-btn" onclick="addToOrder('Aloo Paratha', 90, 'quantity_masala_dosa')"><i class="bi bi-plus">Add</i></button>
+                        </div>
+                    </td> 
+                </tr>
+                <tr>
+                    <td><img id="a7" src="images/chole_bhature.jpg" alt="Dish 2"></td>
+                    <td>
+                        <h3>Chole Bhature</h3>
+                        <p id="a8">Spiced chickpeas served alongside deep-fried bread, creating a delectable and hearty combination.</p>
+                    </td>
+                    <td>&#8377;110</td>
+                    <td>
+                        <div class="add-to-order">
+                            <input type="number" min="0" value="0" class="form-control quantity-input" id="quantity_chole_bhature">
+                            <button class="btn btn-success add-btn" onclick="addToOrder('Aloo Paratha', 110, 'quantity_chole_bhature')"><i class="bi bi-plus">Add</i></button>
+                        </div>
+                    </td> 
+                </tr>
+                <tr>
+                    <td><img id="a7" src="images/malai paneer.jpg" alt="Dish 2"></td>
+                    <td>
+                        <h3>Malai Paneer</h3>
+                        <p id="a8">Creamy and succulent cubes of paneer (Indian cottage cheese) cooked in a rich and flavorful cream sauce.</p>
+                    </td>
+                    <td>&#8377;210</td>
+                    <td>
+                        <div class="add-to-order">
+                            <input type="number" min="0" value="0" class="form-control quantity-input" id="quantity_malai_paneer">
+                            <button class="btn btn-success add-btn" onclick="addToOrder('Aloo Paratha', 210, 'quantity_malai_paneer')"><i class="bi bi-plus">Add</i></button>
+                        </div>
+                    </td> 
+                </tr>
+                <tr>
+                    <td><img id="a7" src="images/veg-biryani.jpg" alt="Dish 2"></td>
+                    <td>
+                        <h3>Veg Biryani</h3>
+                        <p id="a8">Fragrant basmati rice cooked with an assortment of vegetables and aromatic spices, creating a delightful one-pot meal.</p>
+                    </td>
+                    <td>&#8377;150</td>
+                    <td>
+                        <div class="add-to-order">
+                            <input type="number" min="0" value="0" class="form-control quantity-input" id="quantity_veg_biryani">
+                            <button class="btn btn-success add-btn" onclick="addToOrder('Aloo Paratha', 150, 'quantity_veg_biryani')"><i class="bi bi-plus">Add</i></button>
+                        </div>
+                    </td> 
+                </tr>
+                <tr>
+                    <td><img id="a7" src="images/paneer-butter-masala.jpg" alt="Dish 2"></td>
+                    <td>
+                        <h3>Butter Paneer</h3>
+                        <p id="a8">Soft paneer cubes in a luscious and creamy tomato-based curry, seasoned with aromatic spices.</p>
+                    </td>
+                    <td>&#8377;210</td>
+                    <td>
+                        <div class="add-to-order">
+                            <input type="number" min="0" value="0" class="form-control quantity-input" id="quantity_butter_paneer">
+                            <button class="btn btn-success add-btn" onclick="addToOrder('Aloo Paratha', 210, 'quantity_butter_paneer')"><i class="bi bi-plus">Add</i></button>
+                        </div>
+                    </td> 
+                </tr>
+                <tr>
+                    <td><img id="a7" src="images/pav-bhaji.jpg" alt="Dish 2"></td>
+                    <td>
+                        <h3>Pav Bhaji</h3>
+                        <p id="a8">Spiced mashed vegetable curry served with buttered buns, creating a delicious and popular street food.</p>
+                    </td>
+                    <td>&#8377;60</td>
+                    <td>
+                        <div class="add-to-order">
+                            <input type="number" min="0" value="0" class="form-control quantity-input" id="quantity_pav_bhaji">
+                            <button class="btn btn-success add-btn" onclick="addToOrder('Aloo Paratha', 60, 'quantity_pav_bhaji')"><i class="bi bi-plus">Add</i></button>
+                        </div>
+                    </td> 
+                </tr>
+                <tr>
+                    <td><img id="a7" src="images/Rajma_Chawal.jpg" alt="Dish 2"></td>
+                    <td>
+                        <h3>Rajma Chawal</h3>
+                        <p id="a8">Red kidney beans cooked in a thick and flavorful tomato-based gravy, served with steamed rice.
+                        </p>
+                    </td>
+                    <td>&#8377;60</td>
+                    <td>
+                        <div class="add-to-order">
+                            <input type="number" min="0" value="0" class="form-control quantity-input" id="quantity_rajma_chawal">
+                            <button class="btn btn-success add-btn" onclick="addToOrder('Aloo Paratha', 60, 'quantity_rajma_chawal')"><i class="bi bi-plus">Add</i></button>
+                        </div>
+                    </td> 
+                </tr>
+                <tr>
+                    <td><img id="a7" src="images/samosa.jpg" alt="Dish 2"></td>
+                    <td>
+                        <h3>Samosa</h3>
+                        <p id="a8">Crispy pastry filled with a savory mixture of spiced potatoes, peas, is a beloved Indian snack.</p>
+                    </td>
+                    <td>&#8377;25/pl</td>
+                    <td>
+                        <div class="add-to-order">
+                            <input type="number" min="0" value="0" class="form-control quantity-input" id="quantity_samosa">
+                            <button class="btn btn-success add-btn" onclick="addToOrder('Aloo Paratha', 25, 'quantity_samosa')"><i class="bi bi-plus">Add</i></button>
+                        </div>
+                    </td> 
+                </tr>
+                <tr>
+                    <td><img id="a7" src="images/dhokla.jpg" alt="Dish 2"></td>
+                    <td>
+                        <h3>Dhokla</h3>
+                        <p id="a8">Light and spongy steamed cake made from fermented rice and chickpea flour, garnished with mustard seeds and coriander.
+                        </p>
+                    </td>
+                    <td>&#8377;20/pc</td>
+                    <td>
+                        <div class="add-to-order">
+                            <input type="number" min="0" value="0" class="form-control quantity-input" id="quantity_dhokla">
+                            <button class="btn btn-success add-btn" onclick="addToOrder('Aloo Paratha', 20, 'quantity_dhokla')"><i class="bi bi-plus">Add</i></button>
+                        </div>
+                    </td> 
+                </tr>
+            </tbody>
+        </table>
+        <div id="runningTotal" class="mt-3">
+            <h4>Running Total: &#8377; <span id="totalAmount">0</span></h4>
+        </div>
+    </div>
+    <!-- Move your script to the end of the body -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha384-VnX82DQgUqVaT2tIpU6zjUoH+LJSR74p5Pw92nqOuIwz9+aL3bQFiSX8MZiJT2V9" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-eQ8LjgpFVGRKZ5ky3TzvJ7p6P0KCrN0klfmK8KEjRDlLl4J/Z9pZNttR5/0MLlSm" crossorigin="anonymous"></script>
+    <script>
+        // menu-script.js
+        function addToOrder(dish, price, quantityId) {
+            var quantity = document.getElementById(quantityId).value;
+            alert('Added to order:\nDish: ' + dish + '\nPrice: ' + price + '\nQuantity: ' + quantity);
+            // Here you can add logic to update your order.html or perform any other actions
+        }
+
+        var runningTotal = 0;
+
+        function addToOrder(dish, price, quantityId) {
+            var quantity = parseInt(document.getElementById(quantityId).value);
+            var itemTotal = price * quantity;
+
+            runningTotal += itemTotal;
+
+            // Update the displayed total
+            document.getElementById('totalAmount').innerText = runningTotal;
+
+            alert('Added to order:\nDish: ' + dish + '\nPrice: ' + price + '\nQuantity: ' + quantity + '\nTotal: ' + runningTotal);
+        }
+    </script>
+</body>
+</html>

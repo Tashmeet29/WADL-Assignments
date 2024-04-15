@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Email</th>
+            <th>Password</th>
+        </tr>
+        <tr>
+            <td id="email-cell"></td>
+            <td id="password-cell"></td>
+        </tr>
+    </table>
+
+    <script>
+        // Retrieve user data from server and populate the table
+        // This is a simplified example; you would replace this with actual code to fetch user data
+        const userTable = document.getElementById('user-table');
+        const userData = JSON.parse(localStorage.getItem('userData'));
+
+        if (userData) {
+            document.getElementById('email-cell').innerText = userData.email;
+            document.getElementById('password-cell').innerText = userData.password;
+        }
+
+        // Append new rows for each user in userData
+        userData.forEach(user => {
+            const row = userTable.insertRow(-1); // Insert a new row at the end
+            const cell1 = row.insertCell(0);
+            const cell2 = row.insertCell(1);
+
+            cell1.textContent = user.email;
+            cell2.textContent = user.password;
+        });
+    </script>
+</body>
+</html>
